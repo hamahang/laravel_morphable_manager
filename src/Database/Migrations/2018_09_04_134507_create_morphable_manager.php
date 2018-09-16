@@ -10,12 +10,13 @@ class CreateMorphableManager extends Migration
     {
         Schema::create('lmm_morphable', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('pck_name', 255)->nullable()->default(null);;
-            $table->string('dev_name', 255)->nullable()->default(null);;
-            $table->string('name', 255)->nullable()->default(null);;
-            $table->string('model_name', 255)->nullable()->default(null);;
-            $table->string('target_column_name', 255)->nullable()->default(null);;
-            $table->string('target_column_alias', 255)->nullable()->default(null);;
+            $table->string('pck_name', 255)->nullable()->default(null);
+            $table->string('dev_name', 255)->nullable()->default(null);
+            $table->string('name', 255)->nullable()->default(null);
+            $table->string('model_name', 255)->nullable()->default(null);
+            $table->string('target_column_name', 255)->nullable()->default(null);
+            $table->string('target_column_alias', 255)->nullable()->default(null);
+            $table->string('generate_url_func', 255)->nullable()->default(null);
             $table->integer('created_by')->unsigned()->nullable()->default(0);
             $table->timestamps();
             $table->softDeletes();
