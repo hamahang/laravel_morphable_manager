@@ -1,6 +1,6 @@
 <?php
 
-namespace ArtinCMS\LMM\Models;
+namespace Hamahang\LMM\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

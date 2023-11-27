@@ -1,5 +1,5 @@
 <?php
-namespace ArtinCMS\LMM;
+namespace Hamahang\LMM;
 use Illuminate\Support\Facades\Facade;
 
 class LMMFacade extends Facade
